@@ -3571,9 +3571,12 @@
     style="display:none;position:fixed;inset:0;z-index:2000;background:rgba(7,15,30,0.82);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:20px;">
     <div
       style="background:#fff;border-radius:20px;width:100%;max-width:460px;overflow:hidden;box-shadow:0 40px 100px rgba(0,0,0,0.5);">
-      <div style="background:linear-gradient(135deg,var(--navy),var(--navy-light));padding:24px 28px 20px;">
-        <h3 style="font-size:20px;font-weight:800;color:#fff;margin-bottom:4px;">Almost Done—Complete Your Info.</h3>
-        <p style="font-size:13px;color:rgba(255,255,255,0.6);">Just a few more details to find your best options.</p>
+      <div style="background:linear-gradient(135deg,var(--navy),var(--navy-light));padding:24px 28px 20px;display:flex;align-items:flex-start;justify-content:space-between;">
+        <div>
+          <h3 style="font-size:20px;font-weight:800;color:#fff;margin-bottom:4px;">Almost Done—Complete Your Info.</h3>
+          <p style="font-size:13px;color:rgba(255,255,255,0.6);">Just a few more details to find your best options.</p>
+        </div>
+        <button onclick="document.getElementById('hero-step2-overlay').style.display='none';" style="width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,0.12);border:none;cursor:pointer;color:rgba(255,255,255,0.75);font-size:18px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-left:12px;">&#x2715;</button>
       </div>
       <div style="padding:24px 28px 22px;">
         <div class="field"><label>Email</label><input id="h2-email" type="email" placeholder="john@example.com"></div>
@@ -3662,7 +3665,8 @@
   <div id="thankyou-overlay"
     style="display:none;position:fixed;inset:0;z-index:2001;background:rgba(7,15,30,0.88);backdrop-filter:blur(8px);align-items:center;justify-content:center;padding:20px;">
     <div
-      style="background:#fff;border-radius:20px;width:100%;max-width:480px;overflow:hidden;box-shadow:0 40px 100px rgba(0,0,0,0.5);text-align:center;padding:48px 36px;">
+      style="background:#fff;border-radius:20px;width:100%;max-width:480px;overflow:hidden;box-shadow:0 40px 100px rgba(0,0,0,0.5);text-align:center;padding:48px 36px;position:relative;">
+      <button onclick="document.getElementById('thankyou-overlay').style.display='none';" style="position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;background:#F0F4FA;border:none;cursor:pointer;color:#8A97B0;font-size:16px;display:flex;align-items:center;justify-content:center;">&#x2715;</button>
       <div
         style="width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,#D4F3E3,#A8E8C8);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;">
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1B6B4A" stroke-width="2.5">
